@@ -20,7 +20,7 @@ interface ImmutableCreate2Factory {
 contract Deploy is Script {
     ImmutableCreate2Factory immutable factory = ImmutableCreate2Factory(0x0000000000FFe8B47B3e2130213B802212439497);
     bytes initCode = type(FiatTokenV2).creationCode;
-    bytes32 salt = 0x00000000000000000000000000000000000000008f72674776222000024c7f63;
+    bytes32 salt = 0x00000000000000000000000000000000000000009e691e04416aa001581472c7;
 
     function run() external {
         vm.startBroadcast();
